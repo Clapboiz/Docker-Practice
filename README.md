@@ -13,6 +13,7 @@ Sử dụng volume mount, xem nó như một "hộp đen" dữ liệu. Docker qu
 
 ### Command for project
 **run this project:**
+Please start docker desktop before running the following commands (for windows)
      
 ```
 docker compose up -d
