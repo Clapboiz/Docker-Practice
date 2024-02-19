@@ -12,12 +12,28 @@ Sau đó, bài hướng dẫn đề cập đến việc sử dụng volumes đ�
 Sử dụng volume mount, xem nó như một "hộp đen" dữ liệu. Docker quản lý toàn bộ volume, bao gồm cả vị trí lưu trữ trên đĩa. Bạn chỉ cần nhớ tên của volume.
 
 ### Command for project
+**run this project:**
+     
+```
+docker compose up -d
+```
+     
+```
+docker exec -it <mysql-container-id or mysql-container-name > mysql -p todos
+```
+     
+```
+select * from todo_items; (todo_items is a table of DB)
+```
 
-    ```
-    docker build -t getting-started .
-    ```
-    
-    `docker run -dp 127.0.0.1:3000:3000 getting-started`
+Some commands you can try, not from the project.
+```
+docker build -t getting-started .
+```
+
+```
+docker run -dp 127.0.0.1:3000:3000 getting-started
+```
 
 # REFERENCES
 [1]. https://github.com/docker/getting-started-app
