@@ -12,7 +12,8 @@ Sau đó, bài hướng dẫn đề cập đến việc sử dụng volumes đ�
 Sử dụng volume mount, xem nó như một "hộp đen" dữ liệu. Docker quản lý toàn bộ volume, bao gồm cả vị trí lưu trữ trên đĩa. Bạn chỉ cần nhớ tên của volume.
 
 ### Command for project
-**run this project:**
+**Run this project:**
+
 Please start docker desktop before running the following commands (for windows)
      
 ```
