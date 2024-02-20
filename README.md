@@ -37,5 +37,15 @@ docker build -t getting-started .
 docker run -dp 127.0.0.1:3000:3000 getting-started
 ```
 
+### Docker compose and Dockerfile
+| Tính Chất                                       | Dockerfile cho Frontend và Backend                  | Docker Compose cho Database                         |
+|--------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
+| **Tính Độc Lập và Quản Lý Dễ Dàng**              | Dockerfile giúp xây dựng môi trường chạy ứng dụng một cách độc lập và dễ dàng. Đảm bảo mọi người làm việc trên dự án có thể chia sẻ cùng một môi trường phát triển, tránh được các vấn đề liên quan đến sự khác biệt giữa môi trường phát triển và môi trường triển khai. | Docker Compose giúp quản lý nhiều container cùng một lúc, hữu ích khi muốn chạy và quản lý frontend, backend và database trong môi trường phát triển hoặc triển khai. |
+| **Dễ Di Động và Chia Sẻ**                        | Docker images có thể xây dựng một lần và chia sẻ hoặc triển khai trên nhiều máy tính một cách dễ dàng. | Giúp định nghĩa cấu hình của database và dịch vụ liên quan trong một tệp duy nhất, dễ di chuyển và chia sẻ.         |
+| **Quản Lý Phụ Thuộc và Kết Nối**                 | Định nghĩa các phụ thuộc cụ thể và môi trường thực thi cho frontend và backend. | Định nghĩa cách các dịch vụ kết nối với nhau, giúp quản lý mối quan hệ và cấu hình mạng giữa frontend, backend và database. |
+
+Đương nhiên, bạn có thể thực hiện việc đảo ngược và đặt frontend, backend trong Docker Compose và database trong Dockerfile nếu dự án của bạn yêu cầu. Quyết định này có thể phụ thuộc vào cấu trúc của dự án, yêu cầu kỹ thuật cụ thể, và sự thuận tiện trong việc triển khai và quản lý môi trường.
+
+
 # REFERENCES
 [1]. https://github.com/docker/getting-started-app
