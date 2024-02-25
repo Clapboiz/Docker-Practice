@@ -46,6 +46,12 @@ docker run -dp 127.0.0.1:3000:3000 getting-started
 
 Đương nhiên, bạn có thể thực hiện việc đảo ngược và đặt frontend, backend trong Docker Compose và database trong Dockerfile nếu dự án của bạn yêu cầu. Quyết định này có thể phụ thuộc vào cấu trúc của dự án, yêu cầu kỹ thuật cụ thể, và sự thuận tiện trong việc triển khai và quản lý môi trường.
 
+### Some commands
+**Stop all container, which are running**
+
+```
+docker stop $(docker ps -q)
+```
 
 # REFERENCES
 [1]. https://github.com/docker/getting-started-app
